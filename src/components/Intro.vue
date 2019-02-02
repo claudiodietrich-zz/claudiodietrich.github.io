@@ -1,26 +1,24 @@
 <template>
-  <section class="hero has-text-centered">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title is-size-4-mobile is-size-1-desktop">Full Stack Developer</h1>
-        <h2 class="subtitle is-size-5-mobile is-size-4-desktop">I code beautifully simple things, and I love what I do.</h2>
-        <img class="is-bottom" src="@/assets/img/avatar.svg" alt="Avatar">
-      </div>
-    </div>
-
-    <div class="hero-foot">
-      <div class="container">
-        <img src="@/assets/img/hero.png" alt="Hero">
+  <section class="section has-text-centered has-background-purple is-medium">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-fifths">
+          <h1 class="title has-text-white is-spaced is-size-3-desktop is-size-4-mobile">
+            Hi, I’m Claudio. Nice to meet you.
+          </h1>
+          <h2 class="subtitle has-text-white is-size-5-desktop">
+            Since beginning my journey as a web develeoper nearly 5 years ago, I've done work for agencies, startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops.
+          </h2>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-@media screen and (min-width: 769px) {
-  .hero-foot img {
-    max-width: 860px;
-  }
+
+.section {
+    padding-bottom: 18rem!important;
 }
 </style>
 
