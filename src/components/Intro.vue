@@ -7,7 +7,7 @@
             Hi, I’m Claudio. Nice to meet you.
           </h1>
           <h2 class="subtitle has-text-white is-size-5-desktop">
-            Since beginning my journey as a web develeoper nearly 5 years ago, I've done work for agencies, startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops.
+            {{ `Since beginning my journey as a web develeoper nearly ${yearsOfExperience} years ago, I've done work for agencies, startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops.` }}
           </h2>
         </div>
       </div>
@@ -15,8 +15,17 @@
   </section>
 </template>
 
-<style scoped>
+<script>
+export default {
+  data () {
+    return {
+      yearsOfExperience: (new Date()).getFullYear() - 2014
+    }
+  }
+}
+</script>
 
+<style scoped>
 .section {
     padding-bottom: 18rem!important;
 }
